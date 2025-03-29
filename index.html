@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Sain Saburaj</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+
+<body>
+    <nav
+        class="navbar fixed top-0 w-full py-4 z-50 flex items-center justify-between px-8 b bg-opacity-90 backdrop-blur-xl">
+        <!-- Branding -->
+        <div class="flex items-center">
+            <a href="#home" class="text-white font-bold text-lg">Sain Saburaj</a>
+        </div>
+    
+        <!-- Center-Aligned Links (visible on large screens) -->
+        <div class="flex space-x-5 flex-1 justify-end nav-links">
+            <a href="#home" class="text-white nav-link" data-link="home">Home</a>
+            <a href="#about" class="text-white nav-link" data-link="about">About</a>
+            <a href="#experience" class="text-white nav-link" data-link="experience">Experience</a>
+            <a href="#freelancing" class="text-white nav-link" data-link="freelancing">Freelancing</a>
+            <a href="#skills" class="text-white nav-link" data-link="skills">Skills</a>
+            <a href="#works" class="text-white nav-link" data-link="works">Works</a>
+            <a href="#contact" class="text-white nav-link" data-link="contact">Contact</a>
+        </div>
+    
+        <button id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    
+    <div id="sidebar" class="sidebar">
+        <button id="closeSidebar" class="close-sidebar">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="mt-16 space-y-4 text-center">
+            <li><a href="#home" class="block py-2 text-white nav-link" data-link="home">Home</a></li>
+            <li><a href="#about" class="block py-2 text-white nav-link" data-link="about">About</a></li>
+            <li><a href="#experience" class="block py-2 text-white nav-link" data-link="experience">Experience</a></li>
+            <li><a href="#freelancing" class="block py-2 text-white nav-link0" data-link="freelancing">Freelancing</a></li>
+            <li><a href="#skills" class="block py-2 text-white nav-link" data-link="skills">Skills</a></li>
+            <li><a href="#works" class="block py-2 text-white nav-link" data-link="works">Works</a></li>
+            <li><a href="#contact" class="block py-2 text-white nav-link" data-link="contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <header id="home" class="min-h-screen flex items-center px-6 pt-20 _home">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Description -->
+            <div class="description text-center md:text-left px-4 md:px-8">
+                <h1 class="first-head text-4xl md:text-6xl font-bold leading-tight mt-0 sm:mt-6">
+                    Hello, I'm <br>
+                    <span class="text-indigo-400">Sain Saburaj</span>
+                    <h3 class="text-xl md:text-2xl text-indigo-200 font-semibold mt-4" id="typed-text-1">&nbsp; </h3>
+                </h1>
+
+                <p class="mt-4 text-base md:text-lg text-gray-300">
+                    Highly motivated and detail-oriented web development enthusiast with a strong foundation in modern web
+                    development technologies.
+                </p>
+                <a href="#about"
+                    class="mt-6 inline-block bg-indigo-700 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 text-[12px] md:text-md lg:text-lg">
+                    Learn More About Me
+                </a>
+            </div>
+            <!-- Image -->
+            <div class="image px-4 md:px-8 flex justify-center items-center">
+                <div class="relative">
+                    <!-- Circular animation -->
+                    <div class="absolute inset-0 rounded-full "></div>
+                    <img src="assets/new_profile_1x1.jpg" alt="Sain Saburaj"
+                        class="rounded-full shadow-lg border-2 border-indigo-300 max-w-sm w-4/5 md:max-w-md lg:w-full mx-auto z-10">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center  p-12 sm:p-12 md:p-10 lg:p-22 _about">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <!-- Left Image -->
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
+                <img src="assets/about_4x5.jpg" alt="Sain Saburaj" class="rounded-xl border-2 border-indigo-300 object-cover shadow-lg w-3/4 sm:w-2/4 md:w-4/5 lg:w-3/5">
+            </div>
+    
+            <!-- Vertical Line -->
+            <div class="hidden md:block w-px bg-gray-600 mx-4 h-[25rem] md:h-[30rem] mr-10"></div>
+    
+            <!-- Right Details -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Hi There! I'm <br> <span class="text-indigo-400">Sain Saburaj</span>
+                </h2>
+
+                <p class="text-gray-300 leading-relaxed mb-6 md:w-[90%] sm:w-[70%]">
+                    I am a passionate web developer with a focus on creating visually appealing and highly functional
+                    websites. My goal is to craft digital experiences that leave a lasting impact. I specialize in building
+                    applications using modern technologies like 
+                    <span class="text-indigo-400 font-medium">Django (Python)</span>,
+                    <span class="text-indigo-400 font-medium">Tailwind CSS</span>,
+                    <span class="text-indigo-400 font-medium">MySQL</span>, and
+                    <span class="text-indigo-400 font-medium">PHP</span>,
+                    <span class="text-indigo-400 font-medium">ReactJS</span> ensuring both efficiency and style in every project.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-1 gap-2 text-gray-300 mb-6">
+                    <div><strong>Birthday:</strong> August 03, 2002</div>
+                    <div><strong>Phone:</strong> <a href="tel:+918089526061" class="hover:underline">+91 8089526061</a></div>
+                    <div><strong>Email:</strong> <a href="mailto:sainsaburaj38@gmail.com" class="hover:underline">sainsaburaj38@gmail.com</a></div>
+                    <div><strong>From:</strong> Thrissur, Kerala, India</div>
+                    <div><strong>Language:</strong> English, Malayalam, Tamil, Hindi</div>
+                </div>
+    
+                <div class="mt-6">
+                    <a href="assets/Sain Saburaj.pdf" download
+                        class="mt-6 inline-block bg-indigo-700 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 text-[12px] md:text-md lg:text-lg">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-gray-100 text-gray-900 py-20 px-5">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Work Experience</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Freelance Work Card -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-indigo-300">STECH WEB STUDIOS <br> <span class="text-sm text-white italic">(Jan 2023 – Present)</span></h3>
+                    
+                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                        <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">💻 Web Developer (Freelance)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300 pl-5 mt-2">
+                            <li>Designed and developed responsive, SEO-friendly websites, enhancing user engagement and search rankings by 20%.</li>
+                            <li>Built modern, interactive UI/UX using HTML, CSS, Bootstrap, and Tailwind CSS, ensuring a mobile-first and accessible design.</li>
+                            <li>Ensured cross-browser compatibility and performance optimization for a seamless user experience.</li>
+                            <li>Collaborated with 3+ clients to understand business requirements, improving website functionality and user retention.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Completed Works Section -->
+                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                        <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">🎯 Completed Works</h3>
+                        <p class="text-gray-200 mt-2">Here are some of our completed projects:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 pl-5">
+                            <li><a href="https://stech-web-studios.github.io/De-Start/" target="_blank" class="text-blue-300 hover:underline">De Start - Visit Website</a></li>
+                            <li><a href="https://stech-web-studios.github.io/Divine-Spa/" target="_blank" class="text-indigo-300 hover:underline">Divine Spa - Visit Website</a></li>
+                            <li><a href="https://www.depaullcc.com" target="_blank" class="text-indigo-300 hover:underline">De Paul LCC - Visit Website</a></li>
+                            <li><a href="https://stech-web-studios.github.io/sain/" target="_blank" class="text-indigo-300 hover:underline">Portfolio Website - Visit Website</a></li>
+                        </ul>
+                        <p class="text-gray-300 mt-3">More Projects Coming Soon!</p>
+                    </div>
+                </div>
+
+                <!-- Personal Projects Card -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-indigo-300">PERSONAL PROJECTS <br> <span class="text-sm text-white italic">(April 2020 - Present)</span></h3>
+                    
+                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                        <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">🌐 Full-Stack Web Applications</h3>
+                        <p class="text-gray-300 mt-2">
+                            Built 3 applications using Python (Django), PHP, and MySQL, incorporating secure authentication, role-based access control, and CRUD operations (College academic projects). Additionally, implemented RESTful APIs to enable seamless communication between the front-end and back-end systems, ensuring scalability and maintainability. Focused on optimizing database queries and enhancing application performance for a smooth user experience.
+                        </p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 pl-5">
+                            <li><a href="https://github.com/therealsain/s-tracker" target="_blank" class="text-blue-300 hover:underline">s-tracker</a></li>
+                            <li><a href="https://github.com/therealsain/pixtream" target="_blank" class="text-blue-300 hover:underline">Pixtream</a></li>
+                            <li><a href="https://github.com/therealsain/eduke" target="_blank" class="text-blue-300 hover:underline">Eduke</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                        <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">⚛️ ReactJS Applications</h3>
+                        <p class="text-gray-300 mt-2">Developed and hosted 4+ applications integrating REST APIs, state management (React Hooks, Context API, Redux), and reusable components.</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 pl-5">
+                            <li><a href="https://theRealSain.github.io/netflix-clone" target="_blank" class="text-blue-300 hover:underline">Netflix Clone</a></li>
+                            <li><a href="https://theRealSain.github.io/to-do-list" target="_blank" class="text-blue-300 hover:underline">Todo List App</a></li>
+                            <li><a href="https://theRealSain.github.io/weather-app" target="_blank" class="text-blue-300 hover:underline">Weather App with API</a></li>
+                            <li><a href="https://theRealSain.github.io/e-commerce" target="_blank" class="text-blue-300 hover:underline">E-commerce Cart Page with Search & Filter</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="bg-gray-100 text-gray-900 py-20 px-5">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Education</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- MCA Card -->
+                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                    <h3 class="text-2xl font-semibold text-indigo-300">Master of Computer Applications</h3>
+                    <p class="text-lg text-gray-200">De Paul Institute of Science & Technology, Angamaly</p>
+                    <p class="text-sm text-gray-300">Affiliated to Mahatma Gandhi University</p>
+                    <p class="text-gray-400 mt-2">2023 - 2025</p>
+                </div>
+
+                <!-- BSc Computer Science Card -->
+                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                    <h3 class="text-2xl font-semibold text-indigo-300">Bachelor of Science in Computer Science</h3>
+                    <p class="text-lg text-gray-200">St. Thomas College Autonomous, Thrissur</p>
+                    <p class="text-sm text-gray-300">Affiliated to Calicut University</p>
+                    <p class="text-gray-400 mt-2">2020 - 2023</p>
+                </div>
+
+                <!-- Higher Secondary Education Card -->
+                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                    <h3 class="text-2xl font-semibold text-indigo-300">Higher Secondary Education - Science Computer</h3>
+                    <p class="text-lg text-gray-200">St. Aloysius HSS Elthuruth, Thrissur</p>
+                    <p class="text-gray-300 mt-2">2018 - 2020</p>
+                </div>
+
+                <!-- Secondary Education Card -->
+                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                    <h3 class="text-2xl font-semibold text-indigo-300">Secondary Education</h3>
+                    <p class="text-lg text-gray-200">Don Bosco HSS Mannuthy, Thrissur</p>
+                    <p class="text-gray-300 mt-2">2017 - 2018</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="freelancing" class="bg-gray-900 text-white py-40 px-8 md:px-16 lg:px-24">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center">
+            <!-- Left Side: Logo, Heading, and Description -->
+            <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 px-8">
+                <div class="flex justify-center lg:justify-start mb-4">
+                    <img src="assets/STECH-WHITE.png" alt="STECH WEB STUDIOS Logo" class="w-40 mx-auto">
+                </div>
+                <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">STECH WEB STUDIOS</h2>
+                <p class="text-md text-gray-300">
+                    STECH WEB STUDIOS is a dynamic freelancing web development studio specializing in creating high-quality, responsive, and SEO-optimized websites. We bring digital ideas to life by focusing on user experience, performance, and cutting-edge web technologies.
+                </p>
+            </div>
+
+            <!-- Right Side: Services Listing -->
+            <div class="w-full lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-code text-3xl text-blue-400 mr-4"></i>
+                    <span class="text-md font-semibold">Custom Website Development</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-search text-3xl text-green-400 mr-4"></i>
+                    <span class="text-md font-semibold">SEO Optimization & Performance</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-pencil-ruler text-3xl text-yellow-400 mr-4"></i>
+                    <span class="text-md font-semibold">UI/UX Design & Modern Technologies</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-mobile-alt text-3xl text-pink-400 mr-4"></i>
+                    <span class="text-md font-semibold">Responsive & Mobile-Friendly Design</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-server text-3xl text-indigo-400 mr-4"></i>
+                    <span class="text-md font-semibold">Full-Stack Development & Integrations</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-briefcase text-3xl text-purple-400 mr-4"></i>
+                    <span class="text-md font-semibold">Client-Centric & Scalable Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-gray-900 text-white py-40 px-8 md:px-16 lg:px-24">
+        <div class="container mx-auto">
+            <!-- Heading and Description -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Skills</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    I have developed a diverse set of skills, ranging from front-end development to backend systems, 
+                    ensuring seamless and efficient application performance.
+                </p>
+            </div>
+
+            <!-- Skill Listing -->
+            <div class="w-full lg:w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fab fa-python text-3xl text-blue-500 mr-4"></i>
+                    <span class="text-lg font-semibold">Django (Python)</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-code text-3xl text-pink-500 mr-4"></i>
+                    <span class="text-lg font-semibold">Tailwind CSS</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-database text-3xl text-indigo-500 mr-4"></i>
+                    <span class="text-lg font-semibold">MySQL</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fab fa-php text-3xl text-purple-500 mr-4"></i>
+                    <span class="text-lg font-semibold">PHP</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fab fa-bootstrap text-3xl text-blue-500 mr-4"></i>
+                    <span class="text-lg font-semibold">Bootstrap CSS</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fab fa-css3-alt text-3xl text-blue-500 mr-4"></i>
+                    <span class="text-lg font-semibold">CSS3</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fas fa-c text-3xl text-blue-400 mr-4"></i>
+                    <span class="text-lg font-semibold">C Programming</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fab fa-js-square text-3xl text-yellow-500 mr-4"></i>
+                    <span class="text-lg font-semibold">JavaScript</span>
+                </div>
+                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                    <i class="fab fa-react text-3xl text-blue-400 mr-4"></i>
+                    <span class="text-lg font-semibold">ReactJS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="works" class="bg-gray-100 py-40 px-8 md:px-8 lg:px-10">
+        <div class="container mx-auto px-6">
+            <!-- Heading and Description -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Works</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    Explore my recent projects and the work we've done.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <a href="https://stech-web-studios.github.io/De-Start/" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/destart_2x1.png" alt="Work 4" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">De Start - Website</h3>
+                        <p class="text-gray-400">De Start is a dynamic business networking platform designed to connect professionals, entrepreneurs, and innovators for growth and collaboration.</p>
+                    </div>
+                </a>
+
+                <a href="https://stech-web-studios.github.io/sain/" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/portfolio_2x1.png" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Portfolio Website</h3>
+                        <p class="text-gray-400">A professional portfolio website showcasing skills, projects, and
+                            expertise, crafted using Tailwind CSS.</p>
+                    </div>
+                </a>
+
+                <a href="https://stech-web-studios.github.io/Divine-Spa/" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/devinespa_2x1.jpg" alt="Work 4" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Devine Spa - Website</h3>
+                        <p class="text-gray-400">An elegant and modern website under development for Devine Spa Clinic in the UK, offering a refined digital presence for their business.</p>
+                    </div>
+                </a>
+
+                <a href="https://theRealSain.github.io/netflix-clone" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/netflix_2x1.jpg" alt="Work 1" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Netflix Clone</h3>
+                        <p class="text-gray-400">
+                            A responsive Netflix Clone built using
+                            <span class="text-indigo-400 font-medium">ReactJS</span>, showcasing a clean UI with dynamic data rendering and interactive features.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://theRealSain.github.io/to-do-list" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/todo_2x1.jpg" alt="Work 1" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">To-Do List Application</h3>
+                        <p class="text-gray-400">
+                            A simple and clean To-Do List application built using
+                            <span class="text-indigo-400 font-medium">ReactJS</span>. This app allows users to add, view, and remove tasks from their to-do list.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://theRealSain.github.io/weather-app" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/weather_2x1.png" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Weather Application<h3>
+                        <p class="text-gray-400">
+                            A simple and clean weather application built using
+                            <span class="text-indigo-400 font-medium">ReactJS</span>. This app allows users to view temperature, humidity, wind speed etc.
+                        </p>
+                    </div>
+                </a>
+                
+                <a href="https://theRealSain.github.io/e-commerce" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/e_comm_2x1.png" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">E-Commerce Application<h3>
+                        <p class="text-gray-400">
+                            A simple e-commerce application built using
+                            <span class="text-indigo-400 font-medium">ReactJS</span>. Display products with details, and a filter or search bar, List rendering, filtering, and reusable components.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://depaullcc.com/" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/dplcc_2x1.jpg" alt="Work 3" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">De Paul LCC - Website</h3>
+                        <p class="text-gray-400">A professional website developed for De Paul Linguistic Coaching Centre, Nedumkunnam, Kottayam delivering an intuitive user experience and showcasing their services effectively.</p>
+                    </div>
+                </a>                
+
+                <a href="https://therealsain.github.io/INSANE-ART/" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/insaneart_2x1.jpg" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">INSANE ART - Art Promotion</h3>
+                        <p class="text-gray-400">A dedicated platform for showcasing and promoting creative artworks,
+                            emphasizing unique artistic expressions.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/theRealSain/s-tracker" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/stracker_2x1.jpg" alt="Work 1" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">s-tracker</h3>
+                        <p class="text-gray-400">An advanced student management system designed for educators and parents to monitor academic performance effectively. Features include data-driven insights for future performance analysis.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/theRealSain/Pixtream" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/pixtream_2x1.jpg" alt="Work 2" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Pixtream</h3>
+                        <p class="text-gray-400">A dynamic social media platform fostering user engagement through sharing, discovering, and connecting based on shared interests and interactive features.</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/theRealSain/eduke" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/eduke_2x1.png" alt="Work 2" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Eduke</h3>
+                        <p class="text-gray-400">An academic performance prediction and management platform, with its key feature being mark prediction.</p>
+                    </div>
+                </a>
+
+                <a href="https://stech-web-studios.github.io/Web-design-new-tech/" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/new_2x1.jpg" alt="Work 5" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Web Design Template - New Tech</h3>
+                        <p class="text-gray-400">A clean and minimal light-themed website template incorporating interactive
+                            elements for a seamless user experience.</p>
+                    </div>
+                </a>
+
+                <a href="https://stech-web-studios.github.io/Neon-green-web-design/" target="_blank"
+                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="assets/neon_2x1.jpg" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Web Design Template - Neon Green</h3>
+                        <p class="text-gray-400">A visually striking dark-themed website template featuring neon green
+                            highlights and interactive elements for an engaging user experience.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="bg-gray-800 min-h-screen flex justify-center items-center">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+            <!-- Main Heading -->
+            <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Contact Me</h2>
+    
+            <div class="space-y-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-white">Contact Info</h3>
+                    <p class="text-lg text-gray-400 mt-4">
+                        Feel free to reach out through the details below. I'm always excited to discuss new projects, ideas, or collaborations.
+                    </p>
+                </div>
+    
+                <!-- Email -->
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-100">Email</h4>
+                    <p class="text-gray-400">
+                        <a href="mailto:sainsaburaj38@gmail.com" class="text-gray-400 hover:text-gray-300 transition duration-300">
+                            sainsaburaj38@gmail.com
+                        </a>
+                    </p>
+                </div>
+    
+                <!-- Phone -->
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-100">Phone</h4>
+                    <p class="text-gray-400">
+                        <a href="tel:+918089526061" class="text-gray-400 hover:text-gray-300 transition duration-300">
+                            +91 8089526061
+                        </a>
+                    </p>
+                </div>
+    
+                <!-- Address -->
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-100">Address</h4>
+                    <p class="text-gray-400">Thrissur, Kerala, India</p>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-100">Connect with Me</h4>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mt-4 text-center">
+                        <a href="https://github.com/theRealSain" target="_blank"
+                            class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
+                            <i class="fab fa-github text-2xl mr-2"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/sain-saburaj-813191298" target="_blank"
+                            class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
+                            <i class="fab fa-linkedin text-2xl mr-2"></i> LinkedIn
+                        </a>
+                        <a href="https://instagram.com/_.sain.__" target="_blank"
+                            class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
+                            <i class="fab fa-instagram text-2xl mr-2"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class=" text-gray-300 py-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Powered By Text -->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <a href="https://github.com/STECH-WEB-STUDIOS" target="_blank">
+                    <p class="text-sm ml-5">
+                        Powered by <strong>STECH WEB STUDIOS</strong>
+                    </p>
+                </a>
+            </div>
+
+            <!-- STECH Logo -->
+            <div class="flex justify-center md:justify-end mr-5">
+                <a href="https://github.com/STECH-WEB-STUDIOS" target="_blank">
+                    <img src="assets/STECH-WHITE.png" alt="STECH WEB STUDIOS Logo" class="h-16 w-auto">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
