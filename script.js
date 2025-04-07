@@ -104,3 +104,52 @@ document.addEventListener("DOMContentLoaded", function () {
         cursorChar: "|", // Cursor style
     });
 });
+
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": {
+        "enable": true,
+        "value_area": 1300
+      }
+    },
+    "color": {
+      "value": "#818cf8"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 1
+    },
+    "size": {
+      "value": 1
+    },
+    "line_linked": {
+      "enable": false,
+    },
+    "move": {
+      "enable": true,
+      "speed": 3
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 1000, // Animation duration (in ms)
+        once: true, // Ensures animation happens only once
+    });
+});

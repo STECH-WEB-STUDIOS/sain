@@ -15,20 +15,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <nav
-        class="navbar fixed top-0 w-full py-4 z-50 flex items-center justify-between px-8 b bg-opacity-90 backdrop-blur-xl">
+        class="navbar fixed top-0 w-full py-4 z-50 flex items-center justify-between px-8 b bg-opacity-90 backdrop-blur-lg">
         <!-- Branding -->
         <div class="flex items-center">
             <a href="#home" class="text-white font-bold text-lg">Sain Saburaj</a>
         </div>
     
         <!-- Center-Aligned Links (visible on large screens) -->
-        <div class="flex space-x-5 flex-1 justify-end nav-links">
+        <div class="flex space-x-8 flex-1 justify-end nav-links">
             <a href="#home" class="text-white nav-link" data-link="home">Home</a>
             <a href="#about" class="text-white nav-link" data-link="about">About</a>
             <a href="#experience" class="text-white nav-link" data-link="experience">Experience</a>
@@ -57,7 +58,7 @@
     </div>
 
     <!-- Home Section -->
-    <header id="home" class="min-h-screen flex items-center px-6 pt-20 _home">
+    <header id="home" class="min-h-screen flex items-center px-6 pt-20 _home" data-aos="fade-up">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Description -->
             <div class="description text-center md:text-left px-4 md:px-8">
@@ -90,7 +91,7 @@
 
 
     <!-- About Section -->
-    <section id="about" class="min-h-screen flex items-center justify-center  p-12 sm:p-12 md:p-10 lg:p-22 _about">
+    <section id="about" class="min-h-screen flex items-center justify-center  p-12 sm:p-12 md:p-10 lg:p-22 _about" data-aos="fade-up">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <!-- Left Image -->
             <div class="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
@@ -126,7 +127,7 @@
                 </div>
     
                 <div class="mt-6">
-                    <a href="assets/Sain Saburaj.pdf" download
+                    <a href="assets/SAIN SABURAJ.pdf" download
                         class="mt-6 inline-block bg-indigo-700 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 text-[12px] md:text-md lg:text-lg">
                         Download Resume
                     </a>
@@ -135,7 +136,7 @@
         </div>
     </section>
 
-    <section id="experience" class="bg-gray-100 text-gray-900 py-20 px-5">
+    <section id="experience" class="bg-gray-100 text-gray-900 py-20 px-5" data-aos="fade-up">
         <div class="container mx-auto max-w-5xl">
             <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Work Experience</h2>
 
@@ -144,7 +145,7 @@
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold text-indigo-300">STECH WEB STUDIOS <br> <span class="text-sm text-white italic">(Jan 2023 – Present)</span></h3>
                     
-                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                    <div class="mt-6 bg-transparent p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
                         <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">💻 Web Developer (Freelance)</h3>
                         <ul class="list-disc list-inside space-y-2 text-gray-300 pl-5 mt-2">
                             <li>Designed and developed responsive, SEO-friendly websites, enhancing user engagement and search rankings by 20%.</li>
@@ -155,7 +156,7 @@
                     </div>
 
                     <!-- Completed Works Section -->
-                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                    <div class="mt-6 bg-transparent p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
                         <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">🎯 Completed Works</h3>
                         <p class="text-gray-200 mt-2">Here are some of our completed projects:</p>
                         <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 pl-5">
@@ -172,7 +173,7 @@
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold text-indigo-300">PERSONAL PROJECTS <br> <span class="text-sm text-white italic">(April 2020 - Present)</span></h3>
                     
-                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                    <div class="mt-6 bg-transparent p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
                         <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">🌐 Full-Stack Web Applications</h3>
                         <p class="text-gray-300 mt-2">
                             Built 3 applications using Python (Django), PHP, and MySQL, incorporating secure authentication, role-based access control, and CRUD operations (College academic projects). Additionally, implemented RESTful APIs to enable seamless communication between the front-end and back-end systems, ensuring scalability and maintainability. Focused on optimizing database queries and enhancing application performance for a smooth user experience.
@@ -184,7 +185,7 @@
                         </ul>
                     </div>
 
-                    <div class="mt-6 bg-black p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
+                    <div class="mt-6 bg-transparent p-4 rounded-lg border border-gray-500 shadow-md shadow-gray-500 transform transition-transform duration-300 hover:-translate-y-2">
                         <h3 class="text-xl font-semibold text-gray-200 border-b pb-2 text-indigo-300">⚛️ ReactJS Applications</h3>
                         <p class="text-gray-300 mt-2">Developed and hosted 4+ applications integrating REST APIs, state management (React Hooks, Context API, Redux), and reusable components.</p>
                         <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300 pl-5">
@@ -200,13 +201,13 @@
         </div>
     </section>
 
-    <section id="education" class="bg-gray-100 text-gray-900 py-20 px-5">
+    <section id="education" class="bg-gray-100 text-gray-900 py-20 px-5" data-aos="fade-up">
         <div class="container mx-auto max-w-6xl">
             <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Education</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- MCA Card -->
-                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                <div class="bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl edu_card">
                     <h3 class="text-2xl font-semibold text-indigo-300">Master of Computer Applications</h3>
                     <p class="text-lg text-gray-200">De Paul Institute of Science & Technology, Angamaly</p>
                     <p class="text-sm text-gray-300">Affiliated to Mahatma Gandhi University</p>
@@ -214,7 +215,7 @@
                 </div>
 
                 <!-- BSc Computer Science Card -->
-                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                <div class="bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl edu_card">
                     <h3 class="text-2xl font-semibold text-indigo-300">Bachelor of Science in Computer Science</h3>
                     <p class="text-lg text-gray-200">St. Thomas College Autonomous, Thrissur</p>
                     <p class="text-sm text-gray-300">Affiliated to Calicut University</p>
@@ -222,14 +223,14 @@
                 </div>
 
                 <!-- Higher Secondary Education Card -->
-                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                <div class="bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl edu_card">
                     <h3 class="text-2xl font-semibold text-indigo-300">Higher Secondary Education - Science Computer</h3>
                     <p class="text-lg text-gray-200">St. Aloysius HSS Elthuruth, Thrissur</p>
                     <p class="text-gray-300 mt-2">2018 - 2020</p>
                 </div>
 
                 <!-- Secondary Education Card -->
-                <div class="bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 edu_card">
+                <div class="bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl edu_card">
                     <h3 class="text-2xl font-semibold text-indigo-300">Secondary Education</h3>
                     <p class="text-lg text-gray-200">Don Bosco HSS Mannuthy, Thrissur</p>
                     <p class="text-gray-300 mt-2">2017 - 2018</p>
@@ -238,7 +239,7 @@
         </div>
     </section>
 
-    <section id="freelancing" class="bg-gray-900 text-white py-40 px-8 md:px-16 lg:px-24">
+    <section id="freelancing" class="bg-gray-900 text-white py-40 px-8 md:px-16 lg:px-24" data-aos="fade-up">
         <div class="container mx-auto flex flex-col lg:flex-row items-center">
             <!-- Left Side: Logo, Heading, and Description -->
             <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 px-8">
@@ -246,34 +247,34 @@
                     <img src="assets/STECH-WHITE.png" alt="STECH WEB STUDIOS Logo" class="w-40 mx-auto">
                 </div>
                 <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">STECH WEB STUDIOS</h2>
-                <p class="text-md text-gray-300">
+                <p class="text-md text-gray-300 text-center">
                     STECH WEB STUDIOS is a dynamic freelancing web development studio specializing in creating high-quality, responsive, and SEO-optimized websites. We bring digital ideas to life by focusing on user experience, performance, and cutting-edge web technologies.
                 </p>
             </div>
 
             <!-- Right Side: Services Listing -->
             <div class="w-full lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl _freelancing">
                     <i class="fas fa-code text-3xl text-blue-400 mr-4"></i>
                     <span class="text-md font-semibold">Custom Website Development</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl _freelancing">
                     <i class="fas fa-search text-3xl text-green-400 mr-4"></i>
                     <span class="text-md font-semibold">SEO Optimization & Performance</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl _freelancing">
                     <i class="fas fa-pencil-ruler text-3xl text-yellow-400 mr-4"></i>
                     <span class="text-md font-semibold">UI/UX Design & Modern Technologies</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl _freelancing">
                     <i class="fas fa-mobile-alt text-3xl text-pink-400 mr-4"></i>
                     <span class="text-md font-semibold">Responsive & Mobile-Friendly Design</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl _freelancing">
                     <i class="fas fa-server text-3xl text-indigo-400 mr-4"></i>
                     <span class="text-md font-semibold">Full-Stack Development & Integrations</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl _freelancing">
                     <i class="fas fa-briefcase text-3xl text-purple-400 mr-4"></i>
                     <span class="text-md font-semibold">Client-Centric & Scalable Solutions</span>
                 </div>
@@ -281,7 +282,7 @@
         </div>
     </section>
 
-    <section id="skills" class="bg-gray-900 text-white py-40 px-8 md:px-16 lg:px-24">
+    <section id="skills" class="bg-gray-900 text-white py-40 px-8 md:px-16 lg:px-24" data-aos="fade-up">
         <div class="container mx-auto">
             <!-- Heading and Description -->
             <div class="text-center mb-12">
@@ -294,39 +295,39 @@
 
             <!-- Skill Listing -->
             <div class="w-full lg:w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl _freelancing">
                     <i class="fab fa-python text-3xl text-blue-500 mr-4"></i>
                     <span class="text-lg font-semibold">Django (Python)</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fas fa-code text-3xl text-pink-500 mr-4"></i>
                     <span class="text-lg font-semibold">Tailwind CSS</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fas fa-database text-3xl text-indigo-500 mr-4"></i>
                     <span class="text-lg font-semibold">MySQL</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fab fa-php text-3xl text-purple-500 mr-4"></i>
                     <span class="text-lg font-semibold">PHP</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fab fa-bootstrap text-3xl text-blue-500 mr-4"></i>
                     <span class="text-lg font-semibold">Bootstrap CSS</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fab fa-css3-alt text-3xl text-blue-500 mr-4"></i>
                     <span class="text-lg font-semibold">CSS3</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fas fa-c text-3xl text-blue-400 mr-4"></i>
                     <span class="text-lg font-semibold">C Programming</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fab fa-js-square text-3xl text-yellow-500 mr-4"></i>
                     <span class="text-lg font-semibold">JavaScript</span>
                 </div>
-                <div class="flex items-center p-5 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2">
+                <div class="flex items-center p-5 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
                     <i class="fab fa-react text-3xl text-blue-400 mr-4"></i>
                     <span class="text-lg font-semibold">ReactJS</span>
                 </div>
@@ -335,7 +336,7 @@
     </section>
 
 
-    <section id="works" class="bg-gray-100 py-40 px-8 md:px-8 lg:px-10">
+    <section id="works" class="bg-gray-100 py-40 px-8 md:px-8 lg:px-10" data-aos="fade-up">
         <div class="container mx-auto px-6">
             <!-- Heading and Description -->
             <div class="text-center mb-12">
@@ -347,7 +348,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <a href="https://stech-web-studios.github.io/De-Start/" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/destart_2x1.png" alt="Work 4" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -358,7 +359,7 @@
                 </a>
 
                 <a href="https://stech-web-studios.github.io/sain/" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/portfolio_2x1.png" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -370,7 +371,7 @@
                 </a>
 
                 <a href="https://stech-web-studios.github.io/Divine-Spa/" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/devinespa_2x1.jpg" alt="Work 4" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -381,7 +382,7 @@
                 </a>
 
                 <a href="https://theRealSain.github.io/netflix-clone" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/netflix_2x1.jpg" alt="Work 1" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -395,7 +396,7 @@
                 </a>
 
                 <a href="https://theRealSain.github.io/to-do-list" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/todo_2x1.jpg" alt="Work 1" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -409,7 +410,7 @@
                 </a>
 
                 <a href="https://theRealSain.github.io/weather-app" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/weather_2x1.png" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -423,7 +424,7 @@
                 </a>
                 
                 <a href="https://theRealSain.github.io/e-commerce" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/e_comm_2x1.png" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -437,7 +438,7 @@
                 </a>
 
                 <a href="https://depaullcc.com/" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/dplcc_2x1.jpg" alt="Work 3" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -448,7 +449,7 @@
                 </a>                
 
                 <a href="https://therealsain.github.io/INSANE-ART/" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/insaneart_2x1.jpg" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -460,7 +461,7 @@
                 </a>
 
                 <a href="https://github.com/theRealSain/s-tracker" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/stracker_2x1.jpg" alt="Work 1" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -471,7 +472,7 @@
                 </a>
 
                 <a href="https://github.com/theRealSain/Pixtream" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/pixtream_2x1.jpg" alt="Work 2" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -482,7 +483,7 @@
                 </a>
                 
                 <a href="https://github.com/theRealSain/eduke" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/eduke_2x1.png" alt="Work 2" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -493,7 +494,7 @@
                 </a>
 
                 <a href="https://stech-web-studios.github.io/Web-design-new-tech/" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/new_2x1.jpg" alt="Work 5" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -505,7 +506,7 @@
                 </a>
 
                 <a href="https://stech-web-studios.github.io/Neon-green-web-design/" target="_blank"
-                    class="block overflow-hidden p-4 bg-black border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 works_card">
+                    class="block overflow-hidden p-4 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl works_card">
                     <div class="aspect-w-2 aspect-h-1">
                         <img src="assets/neon_2x1.jpg" alt="Work 6" class="rounded-lg border border-gray-500 object-cover w-full h-full">
                     </div>
@@ -519,72 +520,113 @@
         </div>
     </section>
 
-    
-    <section id="contact" class="bg-gray-800 min-h-screen flex justify-center items-center">
-        <div class="container mx-auto px-6 lg:px-20 text-center">
-            <!-- Main Heading -->
-            <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Contact Me</h2>
-    
-            <div class="space-y-12">
-                <!-- Contact Info -->
-                <div>
-                    <h3 class="text-2xl font-semibold text-white">Contact Info</h3>
-                    <p class="text-lg text-gray-400 mt-4">
-                        Feel free to reach out through the details below. I'm always excited to discuss new projects, ideas, or collaborations.
-                    </p>
-                </div>
-    
-                <!-- Email -->
-                <div>
-                    <h4 class="text-xl font-semibold text-gray-100">Email</h4>
-                    <p class="text-gray-400">
-                        <a href="mailto:sainsaburaj38@gmail.com" class="text-gray-400 hover:text-gray-300 transition duration-300">
-                            sainsaburaj38@gmail.com
-                        </a>
-                    </p>
-                </div>
-    
-                <!-- Phone -->
-                <div>
-                    <h4 class="text-xl font-semibold text-gray-100">Phone</h4>
-                    <p class="text-gray-400">
-                        <a href="tel:+918089526061" class="text-gray-400 hover:text-gray-300 transition duration-300">
-                            +91 8089526061
-                        </a>
-                    </p>
-                </div>
-    
-                <!-- Address -->
-                <div>
-                    <h4 class="text-xl font-semibold text-gray-100">Address</h4>
-                    <p class="text-gray-400">Thrissur, Kerala, India</p>
-                </div>
-    
-                <!-- Social Media Links -->
-                <div>
-                    <h4 class="text-xl font-semibold text-gray-100">Connect with Me</h4>
-                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mt-4 text-center">
-                        <a href="https://github.com/theRealSain" target="_blank"
-                            class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
-                            <i class="fab fa-github text-2xl mr-2"></i> GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/sain-saburaj-813191298" target="_blank"
-                            class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
-                            <i class="fab fa-linkedin text-2xl mr-2"></i> LinkedIn
-                        </a>
-                        <a href="https://instagram.com/_.sain.__" target="_blank"
-                            class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
-                            <i class="fab fa-instagram text-2xl mr-2"></i> Instagram
-                        </a>
+    <section id="extra-activities" class="bg-gray-900 text-white py-20 px-8 md:px-16 lg:px-24" data-aos="fade-up">
+        <div class="container mx-auto">
+            <h2 class="text-2xl sm:text-4xl md:text-5xl text-center font-bold mb-10">Extra Activities</h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <!-- Campus Involvement Card -->
+                <div class="p-6 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
+                    <div class="flex items-center mb-4">
+                    <i class="fas fa-users-cog text-4xl text-indigo-400 mr-4"></i>
+                    <h3 class="text-2xl font-semibold text-indigo-300">Campus Involvement</h3>
                     </div>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-2">
+                    <li>Placement Coordinator</li>
+                    <li>Provided technical assistance for various student projects</li>
+                    </ul>
+                </div>
+
+                <!-- Interests Card -->
+                <div class="p-6 bg-transparent border border-gray-500 shadow-md shadow-gray-500 rounded-lg transform transition-transform duration-300 hover:-translate-y-2 backdrop-blur-xl">
+                    <div class="flex items-center mb-4">
+                    <i class="fas fa-palette text-4xl text-indigo-400 mr-4"></i>
+                    <h3 class="text-2xl font-semibold text-indigo-300">Interests</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-2">
+                    <li>Web UI/UX Design – Sketching wireframes & prototyping layouts</li>
+                    <li>Portrait Sketching & Digital Art – Pencil and digital illustrations</li>
+                    </ul>
                 </div>
 
             </div>
         </div>
     </section>
+    
+    <section id="contact" class="bg-gray-800 min-h-screen flex justify-center items-center py-20 px-8 md:px-16 lg:px-24" data-aos="fade-up">
+        <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Left Side: Contact Content -->
+            <div class="text-center md:text-left">
+                <!-- Main Heading -->
+                <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-10">Contact Me</h2>
+
+                <div class="space-y-12">
+                    <!-- Contact Info -->
+                    <div>
+                        <p class="text-lg text-gray-400 mt-4">
+                            Feel free to reach out through the details below. I'm always excited to discuss new projects, ideas, or collaborations.
+                        </p>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-100">Email</h4>
+                        <p class="text-gray-400">
+                            <a href="mailto:sainsaburaj38@gmail.com" class="text-gray-400 hover:text-gray-300 transition duration-300">
+                                sainsaburaj38@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-100">Phone</h4>
+                        <p class="text-gray-400">
+                            <a href="tel:+918089526061" class="text-gray-400 hover:text-gray-300 transition duration-300">
+                                +91 8089526061
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Address -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-100">Address</h4>
+                        <p class="text-gray-400">Thrissur, Kerala, India</p>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-100">Connect with Me</h4>
+                        <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-6 mt-4 text-center">
+                            <a href="https://github.com/theRealSain" target="_blank"
+                                class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
+                                <i class="fab fa-github text-2xl mr-2"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/sain-saburaj-813191298" target="_blank"
+                                class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
+                                <i class="fab fa-linkedin text-2xl mr-2"></i> LinkedIn
+                            </a>
+                            <a href="https://instagram.com/_.sain.__" target="_blank"
+                                class="text-gray-400 hover:text-gray-300 transition duration-300 flex items-center">
+                                <i class="fab fa-instagram text-2xl mr-2"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="hidden md:flex justify-center items-center">
+                <img src="assets/contact.svg" alt="Contact Me" class="rounded-lg shadow-lg w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Footer Section -->
-    <footer class=" text-gray-300 py-6">
+    <footer class=" text-gray-300 py-6" data-aos="fade-up">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Powered By Text -->
             <div class="text-center md:text-left mb-4 md:mb-0">
@@ -604,6 +646,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 

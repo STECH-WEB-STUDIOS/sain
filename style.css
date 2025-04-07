@@ -3,20 +3,20 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
 
 /* Navbar styling */
 .navbar {
     background: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px #00000080;
 }
 /* Navbar links */
 .navbar a {
     transition: color 0.3s ease;
     color: #fff;
-    font-size: 17px !important;
+    font-size: 15px !important;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bolder;
@@ -51,6 +51,24 @@ h1, h2, h3 {
 header, section {
     background-color: #000006 !important;
     color: white !important;
+}
+
+
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5; /* Below images, above text */
+  pointer-events: none;
+}
+
+/* Images should appear above particles */
+img {
+  position: relative;
+  z-index: 10;
 }
 
 /* Hamburger Button */
